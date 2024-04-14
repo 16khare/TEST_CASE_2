@@ -1,0 +1,60 @@
+{
+    "My-app:My-app-test:1.0-SNAPSHOT": {
+        "groupId": "My-app",
+        "artifactId": "My-app-test",
+        "version": "1.0-SNAPSHOT",
+        "dependencies": [],
+        "path": "/home/runner/work/TEST_CASE_2/TEST_CASE_2",
+        "buildCommand": "mvn clean install"
+    },
+    "None:Module1:None": {
+        "groupId": null,
+        "artifactId": "Module1",
+        "version": null,
+        "dependencies": [
+            {
+                "groupId": "My-app",
+                "artifactId": "Module2",
+                "version": "1.0-SNAPSHOT"
+            }
+        ],
+        "path": "/home/runner/work/TEST_CASE_2/TEST_CASE_2/Module1",
+        "buildCommand": "mvn clean install"
+    },
+    "None:Module2:None": {
+        "groupId": null,
+        "artifactId": "Module2",
+        "version": null,
+        "dependencies": [],
+        "path": "/home/runner/work/TEST_CASE_2/TEST_CASE_2/Module2",
+        "buildCommand": "mvn clean install"
+    },
+    "None:Module3:None": {
+        "groupId": null,
+        "artifactId": "Module3",
+        "version": null,
+        "dependencies": [
+            {
+                "groupId": "My-app",
+                "artifactId": "Module4",
+                "version": "1.0-SNAPSHOT"
+            }
+        ],
+        "path": "/home/runner/work/TEST_CASE_2/TEST_CASE_2/Module3",
+        "buildCommand": "mvn clean install"
+    },
+    "None:Module4:None": {
+        "groupId": null,
+        "artifactId": "Module4",
+        "version": null,
+        "dependencies": [
+            {
+                "groupId": "My-app",
+                "artifactId": "Module2",
+                "version": "1.0-SNAPSHOT"
+            }
+        ],
+        "path": "/home/runner/work/TEST_CASE_2/TEST_CASE_2/Module4",
+        "buildCommand": "mvn clean install"
+    }
+}
